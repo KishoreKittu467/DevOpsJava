@@ -18,6 +18,7 @@ import lombok.Setter;
 public class SampleJavaProject implements Runnable {
 
     /** The delay between printed messages. */
+    /** sample change made by kishore**/
     private static final long PRINT_DELAY = 1000L;
 
     /** The name to be printed in the output message. */
@@ -65,6 +66,7 @@ public class SampleJavaProject implements Runnable {
 
     @Override
     public final void run() {
+        
         do {
             sayHello();
             try {
@@ -72,6 +74,7 @@ public class SampleJavaProject implements Runnable {
             } catch (InterruptedException e) {
                 return;
             }
+            
         } while (loop);
     }
 }
